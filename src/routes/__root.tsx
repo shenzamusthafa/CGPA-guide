@@ -9,6 +9,8 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 function NotFoundComponent() {
   return (
@@ -126,7 +128,26 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Outlet />
+      <div className="relative min-h-screen overflow-x-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="pointer-events-none fixed inset-0 -z-20 h-full w-full object-cover"
+        >
+          <source
+            src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260314_131748_f2ca2a28-fed7-44c8-b9a9-bd9acdd5ec31.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div className="pointer-events-none fixed inset-0 -z-10 bg-background/55" />
+        <Navbar />
+        <main className="mx-auto max-w-6xl px-4 sm:px-6">
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
     </QueryClientProvider>
   );
 }
