@@ -89,6 +89,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "IIIT Kottayam Academic Companion" },
+      { name: "description", content: "IIITK Compass is an academic analytics platform for IIIT Kottayam B.Tech students." },
+      { property: "og:description", content: "IIITK Compass is an academic analytics platform for IIIT Kottayam B.Tech students." },
+      { name: "twitter:description", content: "IIITK Compass is an academic analytics platform for IIIT Kottayam B.Tech students." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a2f1fb3d-15af-4b96-b6a5-3b71b25f117b/id-preview-f4169f2f--07fbcc22-f00a-426e-a0bc-78f0850243ac.lovable.app-1779800089936.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a2f1fb3d-15af-4b96-b6a5-3b71b25f117b/id-preview-f4169f2f--07fbcc22-f00a-426e-a0bc-78f0850243ac.lovable.app-1779800089936.png" },
     ],
     links: [
       {
